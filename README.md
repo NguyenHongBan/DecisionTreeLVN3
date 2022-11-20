@@ -1,10 +1,7 @@
-# Decision-Tree
-
-Clone the directory <br/>
-Open the terminal <br/>
-Set the current directory <br/>
-Run `python decisiontree.py`
-
-The output will show the preorder traversal of the decision tree
-
-![alt text](https://cdn-images-1.medium.com/max/800/1*hyNHuC9L-POy28eSdCubEQ.png)
+# DecisionTreeLVN3
+Clone thư mục hoặc download .Zip thư mục về máy
+Chọn nơi chứa project
+Mở Terminal
+Chạy python process.py
+Sao chép đường dẫn http://127.0.0.1:5000 xuất hiện trên cửa sổ Terminal
+Mở trình duyệt và dán đường dẫn lên thanh đường dẫn của trình duyệt
