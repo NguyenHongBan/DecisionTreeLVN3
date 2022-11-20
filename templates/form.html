@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX Example</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="{{ url_for('static', filename='js/form.js') }}"></script>
+	<link rel="stylesheet" href="{{url_for('static', filename  = 'styles/style.css')}}">
+</head>
+<body>
+<div class="decision_tennis">
+	<br><br><br><br>
+	<form class="form-inline">
+			<div>
+				<h1>DECIDED TO PLAY TENNIS</h1>
+			</div>
+
+			<div class="content">
+				<div class="content-attribute" >
+					<div class="attribute">outlook</div>
+					<div class="attribute">humidity</div>
+				</div>
+				<div class="mar-20">
+					<div class="content-attribute" class="content-outlook">
+						<select name="outlook" class="attribute-select outlook" id="outlookI">
+							<option value="Sunny">Sunny</option>
+							<option value="Overcast">Overcast</option>
+							<option value="Rain">Rain</option>
+						</select>
+					</div>
+					<div class="content-attribute" class="content-humidity" id = "humidityI">
+						<select name="humidity" class="attribute-select humidity">
+							<option value="High">High</option>
+							<option value="Normal">Normal</option>
+						</select>
+					</div>
+					
+				</div>
+				<div>
+					<div temp class="attribute">temp</div>
+					<div class="attribute">wind</div>
+				</div>
+				<div>
+					<div class="content-attribute" class="content-temp">
+						<select name="temp" class="attribute-select temp" id="tempI">
+							<option value="Hot">Hot</option>
+							<option value="Mild">Mild</option>
+							<option value="Cool">Cool</option>
+						</select>
+					</div>
+					<div class="content-attribute" class="content-wind">
+						<select name="wind" class="attribute-select wind" id="windI">
+							<option value="Weak">Weak</option>
+							<option value="Strong">Strong</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+		<div class="content">
+			<button type="submit" class="result-button">RESULT</button>
+		</div>
+		<!-- <div class="form-group">
+			<label class="sr-only" for="emailInput">Email address</label>
+			<input type="email" class="form-control" id="emailInput" placeholder="Email">
+		  </div>
+		  <div class="form-group">
+			<label class="sr-only" for="nameInput">Name</label>
+			<input type="text" class="form-control" id="nameInput" placeholder="First Name">
+		  </div> -->
+
+	  <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+	</form>
+	<br>
+	<!-- <div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+	<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div> -->
+	<div class="container-result">
+        <div class="content-result">
+            <p class="text-result" id="textResult">YES. Today the weather is very well, so you can play tennis!!!</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
